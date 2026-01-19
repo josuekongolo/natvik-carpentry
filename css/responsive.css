@@ -1,0 +1,447 @@
+/* ============================================
+   NATVIK CARPENTRY - Responsive Stylesheet
+   Mobile-First Design
+   ============================================ */
+
+/* ============================================
+   TABLET BREAKPOINT (768px+)
+   ============================================ */
+
+@media (min-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Header */
+    .header-container {
+        padding: var(--spacing-sm) var(--spacing-lg);
+    }
+
+    .nav-desktop {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: none !important;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: 3.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.375rem;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Service Area */
+    .service-area {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Cabin Section */
+    .cabin-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Service Details */
+    .service-detail-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* About Section */
+    .about-intro {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+/* ============================================
+   DESKTOP BREAKPOINT (1024px+)
+   ============================================ */
+
+@media (min-width: 1024px) {
+    /* Typography */
+    h1 {
+        font-size: 3rem;
+    }
+
+    /* Header */
+    .header-cta {
+        display: block;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Values Grid */
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    }
+}
+
+/* ============================================
+   LARGE DESKTOP BREAKPOINT (1200px+)
+   ============================================ */
+
+@media (min-width: 1200px) {
+    /* Container */
+    .container {
+        padding: 0 var(--spacing-lg);
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    /* Area Map */
+    .area-map iframe {
+        height: 400px;
+    }
+
+    /* Service Images */
+    .service-image img {
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+/* ============================================
+   SMALL MOBILE ADJUSTMENTS (max-width: 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9375rem;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 85vh;
+        padding: var(--spacing-xl) 0;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    /* Quick Contact */
+    .quick-contact-container {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Features */
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Pricing List */
+    .pricing-list li {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.25rem;
+    }
+
+    /* CTA Buttons */
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+
+    /* Contact Items */
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Form */
+    .form-checkbox {
+        align-items: flex-start;
+    }
+
+    /* Footer */
+    .footer-bottom {
+        gap: var(--spacing-xs);
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    .header,
+    .quick-contact,
+    .scroll-top,
+    .nav-mobile,
+    .hero-buttons,
+    .cta-section,
+    .form-submit {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 2rem 0;
+        background: none;
+        margin-top: 0;
+    }
+
+    .hero-content {
+        color: #000;
+    }
+
+    .section {
+        padding: 1.5rem 0;
+        page-break-inside: avoid;
+    }
+
+    .footer {
+        background: none;
+        color: #000;
+        padding: 1rem 0;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    .service-card,
+    .project-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE ADJUSTMENTS
+   ============================================ */
+
+@media (prefers-contrast: high) {
+    :root {
+        --color-primary: #1a3518;
+        --color-secondary: #6b4a0d;
+        --color-text: #000000;
+        --color-text-light: #333333;
+        --color-border: #000000;
+    }
+
+    .btn {
+        border: 2px solid currentColor;
+    }
+
+    .service-card,
+    .project-card,
+    .value-card {
+        border: 2px solid var(--color-text);
+    }
+}
+
+/* ============================================
+   DARK MODE (Future Enhancement)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    /*
+    Dark mode styles can be added here if needed.
+    Currently keeping the design light as per brand guidelines.
+    */
+}
+
+/* ============================================
+   LANDSCAPE PHONE ORIENTATION
+   ============================================ */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: var(--spacing-lg) 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-features {
+        display: none;
+    }
+}
+
+/* ============================================
+   HOVER CAPABLE DEVICES
+   ============================================ */
+
+@media (hover: hover) {
+    .service-card:hover .service-icon {
+        background-color: var(--color-primary);
+    }
+
+    .service-card:hover .service-icon svg {
+        fill: var(--color-white);
+    }
+
+    .project-card:hover .project-image {
+        transform: scale(1.05);
+    }
+
+    .project-card .project-image {
+        transition: transform var(--transition-normal);
+    }
+
+    .project-card {
+        overflow: hidden;
+    }
+}
+
+/* ============================================
+   TOUCH DEVICES
+   ============================================ */
+
+@media (hover: none) {
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+    .service-card:active,
+    .project-card:active {
+        transform: translateY(-2px);
+    }
+}
